@@ -1,0 +1,27 @@
+/***************************
+* Author: Febechukwu Megwalu
+* Midterm 1
+****************************/
+
+import java.util.Scanner;
+
+public class Exercise1 {
+   public static void main(String[]args) {
+      Scanner input = new Scanner(System.in);
+      System.out.println("Please enter your height in feet and inches");
+      
+      System.out.print("feet: ");
+      int feet = input.nextInt();
+      System.out.print("inches: ");
+      int inches = input.nextInt();
+      
+      input.nextLine();// clean up
+      System.out.print("name: ");
+      String name = input.nextLine();
+      System.out.printf("%s is %d'%d\" tall.", name, feet, inches);
+      
+      if (feet > 6){
+         System.out.print(" (order LT or XT)");
+      }
+   }
+}
