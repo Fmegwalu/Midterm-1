@@ -1,0 +1,16 @@
+
+public class FireworkApp {
+   public static void main(String[]args){
+      Firework myFirework = new Firework("red");
+      
+      System.out.printf("Color of myFirework: %s", myFirework.getColor());
+      System.out.printf("%nused: %b", myFirework.getUsed());
+      myFirework.explode();
+      
+      System.out.printf("%nused: %b", myFirework.getUsed());
+      System.out.printf("%nused: %b", myFirework.getUsed());
+      
+      myFirework.explode();
+
+   }
+}
