@@ -1,0 +1,25 @@
+
+public class Firework {
+   private String color;
+   private boolean used;
+   
+   public Firework(String c) {
+      color = c;
+   }
+   
+   public void explode(){
+      if (used == false){
+         System.out.printf("%nBig %s explosion", getColor());
+         
+         used = true;
+      }
+   }
+   
+   public String getColor(){
+      return color;
+   }
+   
+   public boolean getUsed(){
+      return used;
+   }
+}
